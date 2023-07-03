@@ -1,0 +1,16 @@
+.steps {
+    padding: 140px 0;
+}
+.steps__title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+.steps__content-col:first-child {
+    background: #FDE1FF;
+}
+.steps__content-col:nth-child(2) {
+    background: #E1EFFF;
+}
+.steps__content-col:nth-child(3) {
+    background: #E4E1FF;
+}

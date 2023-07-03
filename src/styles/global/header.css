@@ -1,0 +1,27 @@
+.header {
+    padding: 24.5px 0;
+    background-color: #fff;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.menu ul{
+    display: flex;
+    width: 100%;
+    gap: 80px;
+}
+.user__menu ul{
+    display: flex;
+    width: 100%;
+    gap: 24px;
+    justify-content: flex-end;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.user__menu {
+    display: flex;
+    align-items: center;
+}

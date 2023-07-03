@@ -1,0 +1,11 @@
+.footer {
+    background: #FFFAFA;
+    padding: 63px 0;
+}
+.social__icons {
+    display: flex;
+    gap: 8px;
+}
+.footer__wrapper {
+    margin-bottom: 99px;
+}

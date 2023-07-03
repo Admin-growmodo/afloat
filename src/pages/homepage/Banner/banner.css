@@ -1,0 +1,9 @@
+.banner{
+    background-color: #FFFAFA;
+}
+.banner__container-col:first-child {
+    padding: 56px 0 73px; 
+}
+.banner__container-col h1{
+    font-family: 'Lora';
+}

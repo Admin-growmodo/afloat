@@ -5,7 +5,7 @@ function Banner() {
             <div className="container">
                 <div className="row banner__container">
                     <div className="col-6 banner__container-col">
-                        <h1>Say hello to gifting at your fingertips!</h1>
+                        <h1>Say <span>hello</span> to gifting at your fingertips!</h1>
                         <h2>DID WE MENTION IT'S SAME-DAY DELIVERY?</h2>
                         <div className="banner__form">
                             <div className="banner__form-info">
@@ -33,7 +33,7 @@ function Banner() {
                         </div>
                     </div>
                     <div className="col-6 banner__container-col">
-                        <img src="../assets/layouts/banner-image.png" alt="Banner Image" />
+                        <img src="../assets/layouts/banner-image.png" alt="Banner" />
                     </div>
                 </div>
             </div>
