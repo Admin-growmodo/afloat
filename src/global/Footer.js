@@ -37,10 +37,10 @@ function Footer() {
               <div className="col-3 footer__wrapper-col">
                 <h2>TREAT YO'SELF.</h2>
                 <span>Gift us your email for the insider scoop on new store, products and giveaways.</span>
-                <form>
+                <form id="form-footer">
                   <input type="email" placeholder="Enter your email" />
                   <input type="text" placeholder="Enter your zipcode" />
-                  <button type="submit">Send</button>
+                  <button className="primary-btn" type="submit">Send</button>
                 </form>
               </div>
             </div>
@@ -48,7 +48,7 @@ function Footer() {
         </div>
         <div className="copyright">
           <div className="container">
-            <p>© 2020-2023 afloat. All rights reserved. This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
+            <p>© 2020-2023 afloat. All rights reserved. This site is protected by reCAPTCHA and the Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a> apply.</p>
           </div>
         </div>
       </div>
