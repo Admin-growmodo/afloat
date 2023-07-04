@@ -1,10 +1,15 @@
 import './socialmedia.css'
 function SocialMedia() {
     return (
-        <div className='social-media'>
+        <div className='socialmedia'>
             <div className='container'>
-                <h3>Follow us on instagram!</h3>
-                <p>@theafloatapp</p>
+                <div className='row socialmedia__title'>
+                    <h3>Follow us on instagram!</h3>
+                    <p>@theafloatapp</p>
+                </div>
+                <div className='row socialmedia__content'>
+                    <img src="../assets/layouts/socialmedia-image.png" />
+                </div>
             </div>
         </div>
     );

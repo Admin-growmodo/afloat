@@ -1,0 +1,22 @@
+.featured {
+    padding: 123px 0 125px;
+}
+.featured__title-wrap h2 {
+    font-family: var(--accent-font);
+    color: var(--accent-blue-color);
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 24px;
+    height: 79px;
+}
+.featured__logo-col img {
+    margin: 0 auto;
+}
+.featured__logo-col {
+    max-width: 216px;
+}
+.featured__logo {
+    gap: 140px;
+    justify-content: center;
+    align-items: center;
+}

@@ -2,3 +2,95 @@
     background: #FFFAFA;
     padding: 80px 0 40px;
 }
+.citytabs h2 {
+    color: var(--accent-red-color);
+    font-family: var(--accent-font);
+    font-size: 48px;
+    line-height: 56.25px;
+    text-align: center;
+    margin: 0;
+    height: 82px;
+}
+ul.citytabs__navigation {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 48px;
+    margin-top: 42px;
+    gap: 80px;
+}
+ul.citytabs__navigation a {
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 21.47px;
+    position: relative;
+    width: 156px;
+    display: block;
+    text-align: center;
+}
+.tabs_active:before {
+    content: '';
+    background: transparent;
+    background-image: url(http://localhost:3000/assets/layouts/active-underline.svg);
+    background-repeat: no-repeat;
+    width: 156px;
+    height: 14px;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+}
+.row.citytabs__content-wrapper {
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+.row.citytabs__content-wrapper {
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+.citytabs__content-col {
+    max-width: 413px;
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.04);
+    background: #fff;
+    border-radius: 8px;
+}
+.citytabs__content-col--wrap {
+    padding: 24px 16px;
+}
+.citytabs__category {
+    margin-bottom: 24px;
+}
+.citytabs__category span{
+    font-size: 16px;
+    line-height: 24px;
+    background: #fff2f2;
+    padding: 4px 8px;
+    border-radius: 8px;
+    color: var(--accent-red-color);
+    font-family: 'Helvetica-Neue Light';
+    display: unset;
+}
+.citytabs__content-col--wrap h3 {
+    color: #000000;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 23.04px;
+    font-family: var(--headings-font);
+    margin-bottom: 12px;
+}
+.citytabs__content-col--wrap p {
+    color: #000000;
+    font-size: 16px;
+    font-family: 'Helvetica-Neue Light';
+    line-height: 24px;
+}
+.citytabs__content-col img {
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.citytabs__content-btn {
+    margin-top: 40px;
+}
+.citytabs__content-btn button.primary-btn {
+    margin: 0 auto;
+}

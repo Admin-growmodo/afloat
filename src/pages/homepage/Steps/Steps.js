@@ -12,17 +12,17 @@ function Steps() {
                 <div className='row steps__content'>
                     <div className='col-4 steps__content-col'>
                         <p>Select your city and choose an occasion</p>
-                        <img src="../assets/layouts/step1.svg" alt="Step1"/>
+                        <img src="../assets/layouts/step1.png" alt="Step1"/>
                         <h3>Step1</h3>
                     </div>
                     <div className='col-4 steps__content-col'>
                         <p>Shop a curated list of gifts from your favorite local stores.</p>
-                        <img src="../assets/layouts/step2.svg" alt="Step2"/>
+                        <img src="../assets/layouts/step2.png" alt="Step2"/>
                         <h3>Step2</h3>
                     </div>
                     <div className='col-4 steps__content-col'>
                         <p>Enjoy same-day or next-day delivery direct to your recipient.</p>
-                        <img src="../assets/layouts/step3.svg" alt="Step3"/>
+                        <img src="../assets/layouts/step3.png" alt="Step3"/>
                         <h3>Step3</h3>
                     </div>
                 </div>

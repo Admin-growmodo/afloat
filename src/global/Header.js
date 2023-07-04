@@ -13,11 +13,12 @@ function Header() {
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">Contact</a></li>
                             <li><a href="#">Afloat Collection</a></li>
+                            <li><a href="#">for merchants</a></li>
                         </ul>
                     </div>
                     <div className="col-3 user__menu">
                         <ul>
-                            <li><a href="#">Shop Now</a></li>
+                            <li><button className="primary-btn">Shop Now</button></li>
                             <li><a href="#"><img src="../assets/layouts/user-icon.svg" alt="User" /></a></li>
                             <li><a href="#"><img src="../assets/layouts/basket-icon.svg" alt="Basket" /></a></li>
                         </ul>

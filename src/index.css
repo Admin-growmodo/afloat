@@ -18,23 +18,101 @@ code {
   src: url(../public/assets/fonts/lora/static/Lora-Regular.ttf);
 }
 @font-face {
+  font-family: 'Lora Italic';
+  src: url(../public/assets/fonts/lora/static/Lora-Italic.ttf);
+}
+@font-face {
   font-family: 'Helvetica-Neue Regular';
   src: url(../public/assets/fonts/helvetica-neue/HelveticaNeue-Roman.otf);
+}
+@font-face {
+  font-family: 'Helvetica-Neue Medium';
+  src: url(../public/assets/fonts/helvetica-neue/HelveticaNeue-Medium.otf);
+}
+@font-face {
+  font-family: 'Helvetica-Neue Light';
+  src: url(../public/assets/fonts/helvetica-neue/HelveticaNeue-Light.otf);
 }
 @font-face {
   font-family: 'QuickBrush';
   src: url(../public/assets/fonts/quickbrush/quickbrush.ttf);
 }
+@font-face {
+  font-family: 'Manrope';
+  src: url(../public/assets/fonts/manrope/regular.otf);
+}
+
 
 /**** Global Styles *****/
+:root{
+  --accent-red-color: #FA5959;
+  --accent-blue-color: #1863C5;
+  --accent-gray-color: #586D82;
+  --black-color: #000000;
+  --global-font: 'Helvetica-Neue Regular';
+  --headings-font: 'Lora';
+  --accent-font: 'QuickBrush';
+}
+
 body{
-  font-family: 'Helvetica-Neue Regular';
+  font-family: var(--global-font);
 }
 .container{
   max-width: 1440px;
   margin: 0 auto;
   padding-left: 80px;
   padding-right: 80px;
+}
+.row {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+button.primary-btn {
+  background-color: var(--accent-red-color);
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  display: block;
+  border: 0;
+  border-radius: 8px;
+  padding: 13px 16px;
+  line-height: 21.47px;
+}
+input{
+  color: var(--accent-gray-color);
+  border: 1px solid #00000033;
+  padding: 15px 16px;
+  border-radius: 8px;
+  outline: none;
+  font-family: 'Helvetica-Neue Regular';
+  font-size: 14px;
+  line-height: 16.7px;
+}
+select {
+  color: #000000;
+  border: 1px solid #00000033;
+  padding: 12px 16px;
+  border-radius: 8px;
+  outline: none;
+  font-family: 'Helvetica-Neue Regular';
+  font-size: 16px;
+  line-height: 24px;
+}
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  background-image: url(http://localhost:3000/assets/layouts/chevron-up.svg);
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 12px;
+}
+input::placeholder {
+  color: #00000033;
+  font-family: 'Helvetica-Neue Regular';
+  font-size: 14px;
+  line-height: 16.7px;
 }
 ul {
   list-style: none;
@@ -48,4 +126,10 @@ img {
 }
 a{
   text-decoration: none;
+}
+p{
+  margin-bottom: 0;
+}
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11,.col-12{
+  padding: 0;
 }
