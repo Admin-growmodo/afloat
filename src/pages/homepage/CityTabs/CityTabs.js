@@ -8,7 +8,7 @@ function CityTabs() {
                     <ul className='citytabs__navigation'>
                         <li><a className='tabs_active' href="#">Dallas</a></li>
                         <li><a href="#">Kansas</a></li>
-                        <li><a href="#">Other City</a></li>
+                        <li><a className='tabs_new' href="#">Other City</a></li>
                     </ul>
                 </div>
             </div>

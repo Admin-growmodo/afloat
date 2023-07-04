@@ -43,3 +43,21 @@
     width: 259px;
     padding: 0 !important;
 }
+.user__menu a {
+    display: block;
+    padding: 8px;
+    border-radius: 8px;
+}
+.user__menu a:hover{
+    background-color: #FFF2F2;
+}
+.menu__active {
+    color: var(--accent-red-color) !important;
+}
+.menu a:hover{
+    color: var(--accent-red-color) !important;
+}
+.user__menu a:hover svg path {
+    fill: var(--accent-red-color) !important;
+}
+/**** Mobile Responsive ****/

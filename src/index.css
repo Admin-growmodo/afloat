@@ -103,7 +103,7 @@ select {
   -webkit-appearance: none;
   appearance: none;
   background: transparent;
-  background-image: url(http://localhost:3000/assets/layouts/chevron-up.svg);
+  background-image: url(https://afloat-h2gh5cyg0-admin-growmodo.vercel.app/assets/layouts/chevron-up.svg);
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-position-y: 12px;

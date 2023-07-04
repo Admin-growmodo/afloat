@@ -1,5 +1,6 @@
 .banner{
     background-color: #FFFAFA;
+    overflow: hidden;
 }
 .banner__container-col:first-child {
     padding: 90px 0 73px; 
@@ -89,4 +90,9 @@ form#form-banner label {
     margin-right: 8px;
     width: 215px;
 }
-
+.banner__form-col:first-child select {
+    background-position-x: 88%;
+}
+.banner__form-col:nth-child(2) select {
+    background-position-x: 94%;
+}

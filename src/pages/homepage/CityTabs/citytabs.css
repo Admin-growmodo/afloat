@@ -32,13 +32,30 @@ ul.citytabs__navigation a {
 .tabs_active:before {
     content: '';
     background: transparent;
-    background-image: url(http://localhost:3000/assets/layouts/active-underline.svg);
+    background-image: url(https://afloat-h2gh5cyg0-admin-growmodo.vercel.app/assets/layouts/active-underline.svg);
     background-repeat: no-repeat;
     width: 156px;
     height: 14px;
     position: absolute;
     bottom: -20px;
     left: 0;
+}
+.tabs_new{
+    position: relative;
+}
+.tabs_new:before {
+    content: '';
+    background: transparent;
+    background-image: url(https://afloat-h2gh5cyg0-admin-growmodo.vercel.app/assets/layouts/new-graphic.svg);
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: -110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    right: 0;
+    bottom: 0;
 }
 .row.citytabs__content-wrapper {
     gap: 20px;
