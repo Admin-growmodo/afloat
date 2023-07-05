@@ -25,3 +25,11 @@
 .socialmedia__content img {
     padding: 0;
 }
+/**** Mobile Responsive ****/
+@media only screen and (max-width: 500px) {
+    .socialmedia__title h3{
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+}

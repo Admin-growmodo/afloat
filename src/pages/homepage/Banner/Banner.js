@@ -8,7 +8,7 @@ function Banner() {
                         <h1>Say <span className="banner__accent">hello</span> to gifting at your <span className="banner__italic">fingertips</span>!</h1>
                         <div className='banner__text-wrap'>
                             <img className='shine01' src="../assets/layouts/shine-graphic01.svg" alt="Shine 01" />
-                                <h2>DID WE MENTION IT'S SAME-DAY DELIVERY?</h2>
+                                <h2>DID WE MENTION IT'S <span className='banner__text-italic'>SAME-DAY</span> DELIVERY?</h2>
                             <img className='shine02' src="../assets/layouts/shine-graphic02.svg" alt="Shine 02" />
                         </div>
                         <div className="banner__form">
@@ -40,7 +40,7 @@ function Banner() {
                         </div>
                     </div>
                     <div className="col-6 banner__container-col">
-                        <img src="../assets/layouts/banner-image.png" alt="Banner" />
+                        <img src="../assets/layouts/banner-image01.png" alt="Banner" />
                     </div>
                 </div>
             </div>

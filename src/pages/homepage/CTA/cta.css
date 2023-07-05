@@ -76,3 +76,18 @@
     margin: 0 0 0 auto;
 }
 /**** Mobile Responsive ****/
+@media only screen and (max-width: 1200px) {
+    .cta__content-img--wrap .col-4:nth-child(2):before{
+        right: 0;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .cta__content-wrap p {
+        max-width: 100%;
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .cta__title-wrap h2 {
+        height: auto;
+    }
+}
