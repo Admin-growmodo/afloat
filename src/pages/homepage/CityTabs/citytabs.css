@@ -58,11 +58,7 @@ ul.citytabs__navigation a {
     bottom: 0;
 }
 .row.citytabs__content-wrapper {
-    gap: 20px;
-    flex-wrap: nowrap;
-}
-.row.citytabs__content-wrapper {
-    gap: 20px;
+    gap: 0;
     flex-wrap: nowrap;
 }
 .citytabs__content-col {
@@ -70,6 +66,11 @@ ul.citytabs__navigation a {
     box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.04);
     background: #fff;
     border-radius: 8px;
+    margin-right: 20px;
+    flex: unset !important; 
+}
+.citytabs__content-col:nth-child(3){
+    margin-right: 0 !important;
 }
 .citytabs__content-col--wrap {
     padding: 24px 16px;
@@ -110,4 +111,54 @@ ul.citytabs__navigation a {
 }
 .citytabs__content-btn button.primary-btn {
     margin: 0 auto;
+}
+/**** Mobile Responsive ****/
+@media only screen and (max-width: 768px) {
+    .row.citytabs__content-wrapper {
+        flex-wrap: wrap;
+    }
+    .citytabs__content-col{
+        max-width: 100%;
+        width: 100%;
+        margin-right: 0 !important;
+        margin-bottom: 20px;
+    }
+    .citytabs__content-col img {
+        margin: 0 auto;
+        width: 100%;
+        object-fit: cover;
+    }
+    ul.citytabs__navigation{
+        gap: 0;
+    }
+
+}
+@media only screen and (max-width: 500px) {
+    ul.citytabs__navigation {
+        flex: unset !important;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tabs_active:before {
+        bottom: 40px;
+    }
+    ul.citytabs__navigation a {
+        height: 80px;
+    }
+    .tabs_new:before {
+        top: -20px;
+        right: 0;
+        left: unset;
+    }
+    ul.citytabs__navigation{
+        margin: 20px 0;
+    }
+    .citytabs__content{
+        padding: 30px 0;
+    }
+    .citytabs__content-btn{
+        margin-top: 20px;
+    }
 }

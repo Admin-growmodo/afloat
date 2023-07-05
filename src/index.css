@@ -26,6 +26,10 @@ code {
   src: url(../public/assets/fonts/helvetica-neue/HelveticaNeue-Roman.otf);
 }
 @font-face {
+  font-family: 'Helvetica-Neue Italic';
+  src: url(../public/assets/fonts/helvetica-neue/HelveticaNeueItalic.ttf);
+}
+@font-face {
   font-family: 'Helvetica-Neue Medium';
   src: url(../public/assets/fonts/helvetica-neue/HelveticaNeue-Medium.otf);
 }
@@ -132,4 +136,18 @@ p{
 }
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11,.col-12{
   padding: 0;
+}
+
+/**** Mobile Responsive ****/
+@media only screen and (max-width: 1391px) {
+  .container{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }

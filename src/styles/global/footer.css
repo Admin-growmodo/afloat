@@ -97,3 +97,31 @@ form#form-footer input:first-child {
 form#form-footer input:nth-child(2) {
     margin-right: 8px;
 }
+/**** Mobile Responsive ****/
+@media only screen and (max-width: 768px) {
+    .footer{
+        padding: 30px 0;
+    }
+    .footer__wrapper-col:first-child, .footer__wrapper-col:nth-child(2), .footer__wrapper-col:nth-child(3), .footer__wrapper-col:nth-child(4) {
+        width: 50%;
+        padding: 20px;
+    }
+    form#form-footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+    form#form-footer input:first-child, form#form-footer input:nth-child(2){
+        margin: 0;
+    }
+    .copyright p{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .footer__wrapper-col:first-child, .footer__wrapper-col:nth-child(2), .footer__wrapper-col:nth-child(3), .footer__wrapper-col:nth-child(4){
+        width: 100% !important;
+    }
+    .footer__wrapper{
+        margin-bottom: 20px;
+    }
+}
