@@ -27,6 +27,10 @@ span.banner__text-italic{
 span.banner__accent{
     color: var(--accent-red-color);
     font-family: var(--accent-font);
+    transform: rotate(-22.302deg);
+    display: inline-block;
+    position: relative;
+    top: -10px;
 }
 img.shine01 {
     max-width: 27px !important;
