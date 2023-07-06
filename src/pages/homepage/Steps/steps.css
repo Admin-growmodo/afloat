@@ -10,6 +10,7 @@
     font-family: var(--accent-font);
     font-size: 48px;
     line-height: 56.25px;
+    word-spacing: 20px;
 }
 .steps__title p {
     color: #000000;
