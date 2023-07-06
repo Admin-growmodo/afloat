@@ -75,10 +75,23 @@
 .cta__content-img--wrap .col-4:nth-child(3) img {
     margin: 0 0 0 auto;
 }
+.cta__content-img--wrap a {
+    display: block;
+    width: 100%;
+}
 /**** Mobile Responsive ****/
 @media only screen and (max-width: 1200px) {
     .cta__content-img--wrap .col-4:nth-child(2):before{
         right: 0;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .cta{
+        padding: 50px 0;
+    }
+    .cta__content-img--wrap .col-4:nth-child(2):before{
+        right: -40px;
+        bottom: 40px;
     }
 }
 @media only screen and (max-width: 500px) {
