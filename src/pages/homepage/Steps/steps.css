@@ -109,6 +109,9 @@
 
 }
 @media only screen and (max-width: 768px) {
+    .steps{
+        padding: 50px 0;
+    }
     .steps__title{
         margin-bottom: 30px;
     }
@@ -124,6 +127,10 @@
         margin-right: 0 !important;
         margin-bottom: 20px;
         text-align: center;
+        padding: 20px;
+    }
+    .steps__content-col h3{
+        bottom: 20px;
     }
     .steps__content-col p{
         max-width: 100% !important;
@@ -131,10 +138,5 @@
     }
     .steps__content-col:first-child img, .steps__content-col:nth-child(2) img, .steps__content-col:nth-child(3) img{
         margin: 0 auto;
-    }
-}
-@media only screen and (max-width: 500px) {
-    .steps{
-        padding: 50px 0;
     }
 }
