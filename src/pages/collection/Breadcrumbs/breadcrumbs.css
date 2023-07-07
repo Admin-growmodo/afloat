@@ -1,0 +1,7 @@
+.breadcrumbs {
+    padding: 24px 0 80px;
+}
+.breadcrumbs__list ul {
+    display: flex;
+    gap: 24px;
+}
