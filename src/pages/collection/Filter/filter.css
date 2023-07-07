@@ -1,0 +1,8 @@
+.collection__filter {
+    padding: 40px 0 141px;
+}
+.collection__filter-result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,6 +1,6 @@
 import '../styles/global/header.css'
 import { useState, useEffect, useRef } from 'react';
-
+import { Link } from 'react-router-dom'
 function Header() {
     const [burgerClicked, setBurgerClicked] = useState(false);
     const [openProfile, setOpenProfile] = useState(false);
@@ -54,10 +54,10 @@ function Header() {
 
                         <div className={`menu__desktop`}>
                             <ul>
-                                <li><a className='menu__active' href="#">Home</a></li>
+                                <li><Link  className='menu__active' to="/">Home</Link></li>
                                 <li><a href="#">About Us</a></li>
                                 <li><a href="#">Contact</a></li>
-                                <li><a href="#">Afloat Collection</a></li>
+                                <li><Link to="/collection">Afloat Collection</Link></li>
                                 <li><a href="#">for merchants</a></li>
                             </ul>
                         </div>
