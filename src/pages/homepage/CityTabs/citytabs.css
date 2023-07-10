@@ -32,7 +32,7 @@ ul.citytabs__navigation a {
 .tabs_active:before {
     content: '';
     background: transparent;
-    background-image: url(https://afloat-h2gh5cyg0-admin-growmodo.vercel.app/assets/layouts/active-underline.svg);
+    background-image: url(https://afloat-pied.vercel.app//assets/layouts/active-underline.svg);
     background-repeat: no-repeat;
     width: 156px;
     height: 14px;
@@ -46,7 +46,7 @@ ul.citytabs__navigation a {
 .tabs_new:before {
     content: '';
     background: transparent;
-    background-image: url(https://afloat-h2gh5cyg0-admin-growmodo.vercel.app/assets/layouts/new-graphic.svg);
+    background-image: url(https://afloat-pied.vercel.app/assets/layouts/new-graphic.svg);
     background-repeat: no-repeat;
     width: 35px;
     height: 35px;

@@ -23,7 +23,7 @@
 }
 .cta__content-wrap p:before {
     content: '';
-    background-image: url(https://afloat-h2gh5cyg0-admin-growmodo.vercel.app/assets/layouts/cta-underline.svg);
+    background-image: url(https://afloat-pied.vercel.app/assets/layouts/cta-underline.svg);
     background-repeat: no-repeat;
     width: 134px;
     height: 12px;
@@ -53,7 +53,7 @@
 }
 .cta__content-img--wrap .col-4:nth-child(2):before {
     content: '';
-    background-image: url(https://afloat-h2gh5cyg0-admin-growmodo.vercel.app/assets/layouts/cta-arrow.svg);
+    background-image: url(https://afloat-pied.vercel.app/assets/layouts/cta-arrow.svg);
     background-repeat: no-repeat;
     max-width: 81px;
     height: 81px;
