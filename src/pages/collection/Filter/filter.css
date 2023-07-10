@@ -73,7 +73,7 @@ input[type="checkbox"]:checked{
 }
 input[type="checkbox"]:checked:before {
     content: '';
-    background: url(https://afloat-h2gh5cyg0-admin-growmodo.vercel.app/assets/layouts/collection/checkbox-check.svg);
+    background: url(https://afloat-pied.vercel.app/assets/layouts/collection/checkbox-check.svg);
     width: 10px;
     height: 10px;
     position: absolute;
