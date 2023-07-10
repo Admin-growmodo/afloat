@@ -6,9 +6,9 @@ function Breadcrumbs() {
                 <div className='row breadcrumbs__list'>
                     <div className='col-12'>
                         <ul>
-                            <li>Home</li>
+                            <li><a class="breadcrumbs__list-main" href="">Home</a></li>
                             <li><img src='../assets/layouts/collection/breadcrumbs-seperator.svg' Alt="Breadcrumb Icon Seperator"/></li>
-                            <li>Afloat collection</li>
+                            <li><a class="breadcrumbs__list-current" href="">Afloat collection</a></li>
                         </ul>
                     </div>
                 </div>

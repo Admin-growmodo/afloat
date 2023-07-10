@@ -3,6 +3,197 @@
 }
 .collection__filter-result {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -8px;
+}
+.collection__filter-result--inner {
+    flex-basis: 33.33%;
+    padding: 0 8px 24px;
+}
+.sidebar__occasion, .sidebar__storetype {
+    margin-top: 80px;
+}
+.sidebar span.sidebar__label {
+    color: #161616;
+    margin-bottom: 24px;
+    display: block;
+    font-family: 'Helvetica-Neue Light';
+    font-style: italic;
+    font-size: 16px;
+    line-height: 19.07px;
+}
+.sidebar li {
+    font-family: 'Helvetica-Neue Light';
+    color: #161616;
+    font-size: 18px;
+    line-height: 21.76px;
+    margin-bottom: 16px;
+}
+.sidebar input {
+    accent-color: var(--accent-red-color);
+    margin-right: 8px;
+}
+input[type="radio"] {
+    -webkit-appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    outline: none;
+    border: 1px solid #E1E1E1;
+    padding: 0;
+}
+input[type="radio"]:before {
+    width: 8px;
+    height: 8px;
+    content: '';
+    display: block;
+    margin: 1px auto;
+    border-radius: 50%;
+}
+input[type="radio"]:checked:before {
+    background: var(--accent-red-color);
+    
+}
+input[type="radio"]:checked {
+    border-color: var(--accent-red-color);
+}
+input[type="checkbox"]{
+    -webkit-appearance: none;
+    width: 12px;
+    height: 12px;
+    outline: none;
+    border: 1px solid #E1E1E1;
+    padding: 0;
+    border-radius: 2px;
+    position: relative;
+}
+input[type="checkbox"]:checked{
+    background: var(--accent-red-color);
+    border-color: var(--accent-red-color);
+}
+input[type="checkbox"]:checked:before {
+    content: '';
+    background: url(https://afloat-h2gh5cyg0-admin-growmodo.vercel.app/assets/layouts/collection/checkbox-check.svg);
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.collection__filter-col .col-3{
+    width: 15.391%;
+}
+.collection__filter-col .col-9{
+    width: 83.047%;
+}
+.collection__filter-result--img img {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.collection__filter-result--img {
+    height: 250px;
+}
+.collection__filter-result--innerwrap {
+    box-shadow: 0px 4px 16px 0px #0000000A;
+    border-radius: 8px;
+    background: #fff;
+    height: 100%;
+}
+.collection__filter-result--wrap {
+    padding: 24px 16px 16px;
+}
+.collection__category {
+    margin-bottom: 24px;
+}
+.collection__category span {
+    font-size: 16px;
+    line-height: 24px;
+    background: #fff2f2;
+    padding: 4px 8px;
+    border-radius: 8px;
+    color: var(--accent-red-color);
+    font-family: 'Helvetica-Neue Light';
+    display: unset;
+}
+.collection__filter-result--wrap h3 {
+    color: #000000;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 23.04px;
+    font-family: var(--headings-font);
+    margin-bottom: 12px;
+}
+.collection__filter-result--wrap p {
+    color: #000000;
+    font-size: 16px;
+    font-family: 'Helvetica-Neue Light';
+    line-height: 24px;
+}
+.sidebar__location, .sidebar__occasion, .sidebar__storetype{
+    position: relative;
+}
+.sidebar__label-arrow {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+    width: 24px;
+}
+.hide-list{
+    display: none;
+}
+.show-list{
+    display: block;
+}
+/**** Mobile Responsive ****/
+@media only screen and (max-width: 1024px) {
+    .collection__filter-result--inner {
+        flex-basis: 50%;
+    }
+    .collection__filter {
+        padding: 30px 0;
+    }
+    .collection__filter-col .col-3 {
+        width: 30%;
+    }
+    .collection__filter-col .col-9 {
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .sidebar__occasion, .sidebar__storetype{
+        margin-top: 30px;
+    }
+    .sidebar span.sidebar__label{
+        margin-bottom: 15px !important;
+    }
+    .sidebar {
+        padding-right: 16px;
+    }
+    .sidebar__label-arrow{
+        display: block !important;
+    }
+    .sidebar__list-desktop{
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .collection__filter-result--inner{
+        flex-basis: 100% !important;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .collection__filter-col .col-3, .collection__filter-col .col-9{
+        width: 100% !important;
+    }
+    .sidebar{
+        padding: 0 0 20px 0 !important;
+    }
 }
