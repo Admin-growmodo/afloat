@@ -82,6 +82,17 @@ button.primary-btn {
   padding: 13px 16px;
   line-height: 21.47px;
 }
+.shop__now-btn {
+  background-color: var(--accent-red-color);
+  color: #fff !important;
+  font-size: 18px !important;
+  text-transform: uppercase;
+  display: block !important;
+  border: 0;
+  border-radius: 8px;
+  padding: 13px 16px !important;
+  line-height: 21.47px;
+}
 input{
   color: var(--accent-gray-color);
   border: 1px solid #00000033;

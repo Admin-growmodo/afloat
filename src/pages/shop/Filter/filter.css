@@ -1,12 +1,12 @@
-.collection__filter {
+.shop__filter {
     padding: 40px 0 141px;
 }
-.collection__filter-result {
+.shop__filter-result {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -8px;
 }
-.collection__filter-result--inner {
+.shop__filter-result--inner {
     flex-basis: 33.33%;
     padding: 0 8px 24px;
 }
@@ -84,35 +84,36 @@ input[type="checkbox"]:checked:before {
     top: 50%;
     transform: translate(-50%, -50%);
 }
-.collection__filter-col .col-3{
+.shop__filter-col .col-3{
     width: 15.391%;
 }
-.collection__filter-col .col-9{
+.shop__filter-col .col-9{
     width: 83.047%;
 }
-.collection__filter-result--img img {
+.shop__filter-result--img img {
     height: 250px;
     object-fit: cover;
     width: 100%;
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
 }
-.collection__filter-result--img {
+.shop__filter-result--img {
     height: 250px;
+    position: relative;
 }
-.collection__filter-result--innerwrap {
+.shop__filter-result--innerwrap {
     box-shadow: 0px 4px 16px 0px #0000000A;
     border-radius: 8px;
     background: #fff;
     height: 100%;
 }
-.collection__filter-result--wrap {
+.shop__filter-result--wrap {
     padding: 24px 16px 16px;
 }
-.collection__category {
+.shop__category {
     margin-bottom: 24px;
 }
-.collection__category span {
+.shop__category span {
     font-size: 16px;
     line-height: 24px;
     background: #fff2f2;
@@ -123,19 +124,21 @@ input[type="checkbox"]:checked:before {
     display: unset;
     text-transform: capitalize;
 }
-.collection__filter-result--wrap h3 {
+.shop__filter-result--wrap h3 {
     color: #000000;
     font-size: 18px;
     text-transform: uppercase;
     line-height: 23.04px;
     font-family: var(--headings-font);
     margin-bottom: 12px;
+    text-align: center;
 }
-.collection__filter-result--wrap p {
+.shop__filter-result--wrap p {
     color: #000000;
     font-size: 16px;
     font-family: 'Helvetica-Neue Light';
     line-height: 24px;
+    text-align: center;
 }
 .sidebar__location, .sidebar__occasion, .sidebar__storetype{
     position: relative;
@@ -153,18 +156,36 @@ input[type="checkbox"]:checked:before {
 .show-list{
     display: block;
 }
+.add-to-cart-btn {
+    display: block;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.04);
+}
+.add-to-cart-btn img {
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+
+
 /**** Mobile Responsive ****/
 @media only screen and (max-width: 1024px) {
-    .collection__filter-result--inner {
+    .shop__filter-result--inner {
         flex-basis: 50%;
     }
-    .collection__filter {
+    .shop__filter {
         padding: 30px 0;
     }
-    .collection__filter-col .col-3 {
+    .shop__filter-col .col-3 {
         width: 30%;
     }
-    .collection__filter-col .col-9 {
+    .shop__filter-col .col-9 {
         width: 70%;
     }
 }
@@ -186,12 +207,12 @@ input[type="checkbox"]:checked:before {
     }
 }
 @media only screen and (max-width: 600px) {
-    .collection__filter-result--inner{
+    .shop__filter-result--inner{
         flex-basis: 100% !important;
     }
 }
 @media only screen and (max-width: 450px) {
-    .collection__filter-col .col-3, .collection__filter-col .col-9{
+    .shop__filter-col .col-3, .shop__filter-col .col-9{
         width: 100% !important;
     }
     .sidebar{
