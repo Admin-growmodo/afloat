@@ -45,6 +45,14 @@ code {
   font-family: 'Manrope';
   src: url(../public/assets/fonts/manrope/regular.otf);
 }
+@font-face {
+  font-family: 'Assistant-Light';
+  src: url(../public/assets/fonts/assistant/Assistant-Light.ttf);
+}
+@font-face {
+  font-family: 'Assistant-Regular';
+  src: url(../public/assets/fonts/assistant/Assistant-Regular.ttf);
+}
 
 
 /**** Global Styles *****/
@@ -56,6 +64,8 @@ code {
   --global-font: 'Helvetica-Neue Regular';
   --headings-font: 'Lora';
   --accent-font: 'QuickBrush';
+  --price-font: 'Assistant-Light';
+  --add-to-cart: 'Assistant-Regular';
 }
 
 body{
@@ -71,7 +81,7 @@ body{
   max-width: 1280px;
   margin: 0 auto;
 }
-button.primary-btn {
+.primary-btn {
   background-color: var(--accent-red-color);
   color: #fff;
   font-size: 18px;
