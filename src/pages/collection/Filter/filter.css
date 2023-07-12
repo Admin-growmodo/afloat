@@ -73,8 +73,8 @@ input[type="checkbox"]:checked{
 }
 input[type="checkbox"]:checked:before {
     content: '';
-    background: url(https://afloat-pied.vercel.app/assets/layouts/collection/checkbox-check.svg);
-    width: 10px;
+    background: url(https://afloat-pied.vercel.app/assets/layouts/collection/checkbox-check-sm.svg);
+    width: 8px;
     height: 10px;
     position: absolute;
     background-repeat: no-repeat;
@@ -83,6 +83,7 @@ input[type="checkbox"]:checked:before {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    margin-left: 0.5px !important;
 }
 .collection__filter-col .col-3{
     width: 15.391%;
