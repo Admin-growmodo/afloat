@@ -45,14 +45,14 @@ function Filter() {
                                 <div ref={ref} className={`sidebar__list-mobile ` + (LocationClicked ? 'show-list' : 'hide-list')}>
                                     <ul className='sidebar__list'>
                                         {FILTER_CONSTANTS.location.map((loc) => (
-                                            <li><input type="radio" />{loc}</li>
+                                            <li><label><input type="radio" />{loc}</label></li>
                                         ))}
                                     </ul>
                                 </div>
 
                                 <ul className='sidebar__list-desktop'>
                                     {FILTER_CARDS && FILTER_CONSTANTS.location.map((loc) => (
-                                        <li><input type="radio" />{loc}</li>
+                                        <li><label><input type="radio" />{loc}</label></li>
                                     ))}
                                 </ul>
 
@@ -63,14 +63,14 @@ function Filter() {
                                 <div ref={ref} className={`sidebar__list-mobile ` + (OccasionClicked ? 'show-list' : 'hide-list')}>
                                     <ul className='sidebar__list'>
                                         {FILTER_CONSTANTS.occasion.map((occ) => (
-                                            <li><input type="checkbox" />{occ}</li>
+                                            <li><label><input type="checkbox" />{occ}</label></li>
                                         ))}
                                     </ul>
                                 </div>
 
                                 <ul className='sidebar__list-desktop'>
                                     {FILTER_CONSTANTS && FILTER_CONSTANTS.occasion.map((occ) => (
-                                        <li><input type="checkbox" />{occ}</li>
+                                        <li><label><input type="checkbox" />{occ}</label></li>
                                     ))}
                                 </ul>
                             </div>
@@ -80,14 +80,14 @@ function Filter() {
                                 <div ref={ref} className={`sidebar__list-mobile ` + (StoretypeClicked ? 'show-list' : 'hide-list')}>
                                     <ul className='sidebar__list'>
                                         {FILTER_CONSTANTS && FILTER_CONSTANTS.storeType.map((store) => (
-                                            <li><input type="checkbox" />{store}</li>
+                                            <li><label><input type="checkbox" />{store}</label></li>
                                         ))}
                                     </ul>
                                 </div>
 
                                 <ul className='sidebar__list-desktop'>
                                     {FILTER_CONSTANTS && FILTER_CONSTANTS.storeType.map((store) => (
-                                        <li><input type="checkbox" />{store}</li>
+                                        <li><label><input type="checkbox" />{store}</label></li>
                                     ))}
                                 </ul>
                             </div>
