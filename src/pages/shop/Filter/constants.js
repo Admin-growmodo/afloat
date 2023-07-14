@@ -22,6 +22,35 @@ export const FILTER_SORT = {
     
 };
 
+export const FILTER_CONSTANTS = {
+  location: [
+    'Dallas',
+    'Kansas City'
+  ],
+  occasion: [
+    'For her',
+    'For him',
+    'For baby',
+    'For kids',
+    'The happy couple',
+    'Housewarming',
+    'Just because',
+    'Hostess',
+    'Support',
+    'Thank you',
+  ],
+  storeType: [
+    'bakery',
+    'balloons',
+    'botique',
+    'flowers',
+    'home goods',
+    'jewelry',
+    'self-care',
+    'other',
+  ]
+};
+
 export const FILTER_PRODUCT = [
     {
         image: '../assets/layouts/shop/welcome-home-gift-basket.png',

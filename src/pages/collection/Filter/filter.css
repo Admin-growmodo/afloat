@@ -154,6 +154,11 @@ input[type="checkbox"]:checked:before {
 .show-list{
     display: block;
 }
+.sidebar__list-desktop li {
+    font-family: 'Assistant-Regular';
+    font-size: 14px;
+    line-height: 22px;
+}
 /**** Mobile Responsive ****/
 @media only screen and (max-width: 1024px) {
     .collection__filter-result--inner {
