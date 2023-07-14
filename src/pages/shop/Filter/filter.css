@@ -17,16 +17,16 @@
     color: #161616;
     margin-bottom: 24px;
     display: block;
-    font-family: 'Helvetica-Neue Light';
-    font-style: italic;
+    font-family: 'Assistant-Regular';
     font-size: 16px;
-    line-height: 19.07px;
+    line-height: 24px;
+    text-transform: capitalize;
 }
 .sidebar li {
-    font-family: 'Helvetica-Neue Light';
+    font-family: 'Assistant-Regular';
     color: #161616;
-    font-size: 18px;
-    line-height: 21.76px;
+    font-size: 14px;
+    line-height: 22px;
     margin-bottom: 16px;
 }
 .sidebar input {
