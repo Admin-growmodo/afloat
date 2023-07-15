@@ -31,6 +31,8 @@
     justify-content: center;
     width: 893px;
     padding: 0 !important;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 .menu a {
     color: #161616;
@@ -206,4 +208,10 @@ button.menu__hamburger, button.menu__close {
         gap: 10px;
     }
 
+}
+
+@media only screen and (max-width: 450px) {
+    .shop__now-btn {
+        padding: 7px 8px !important;
+    }
 }
