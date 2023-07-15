@@ -2,7 +2,7 @@ import '../SignUp/signUp.css'
 import { useState } from "react"
 import GoogleButton from 'react-google-button'
 
-const SignUp = ({ show, onCloseButtonClick }) => {
+const SignUp = ({ show, openLoginModal, onCloseButtonClick }) => {
   const [passwordShown, setPasswordShown] = useState(false);
 
   if (!show) {
@@ -47,7 +47,7 @@ const SignUp = ({ show, onCloseButtonClick }) => {
               />
             </button>
           </div>
-          <p className='modal__text'>Already have an account? <a href='#'>Log in</a></p>
+          <p className='modal__text'>Already have an account? <a onClick={openLoginModal} href='#'>Log in</a></p>
         </div>
       </div>
     </div>
