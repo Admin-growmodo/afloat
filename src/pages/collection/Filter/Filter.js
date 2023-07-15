@@ -45,14 +45,14 @@ function Filter() {
                                 <div ref={ref} className={`sidebar__list-mobile ` + (LocationClicked ? 'show-list' : 'hide-list')}>
                                     <ul className='sidebar__list'>
                                         {FILTER_CONSTANTS.location.map((loc) => (
-                                            <li><label><input type="radio" />{loc}</label></li>
+                                            <li><label><input type="radio" name="location-mobile"/>{loc}</label></li>
                                         ))}
                                     </ul>
                                 </div>
 
                                 <ul className='sidebar__list-desktop'>
                                     {FILTER_CARDS && FILTER_CONSTANTS.location.map((loc) => (
-                                        <li><label><input type="radio" />{loc}</label></li>
+                                        <li><label><input type="radio" name="location"/>{loc}</label></li>
                                     ))}
                                 </ul>
 
