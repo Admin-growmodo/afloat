@@ -2,7 +2,7 @@ import '../Login/login.css'
 import { useState } from "react"
 import GoogleButton from 'react-google-button'
 
-const Login = ({ show, onCloseButtonClick }) => {
+const Login = ({ show, openSignUpModal, openResetPasswordModal,  onCloseButtonClick }) => {
   const [passwordShown, setPasswordShown] = useState(false);
 
   if (!show) {
@@ -29,6 +29,9 @@ const Login = ({ show, onCloseButtonClick }) => {
                 <input type={passwordShown ? "text" : "password"} placeholder='Password' />
                 <span onClick={togglePassword}><img className='password__icon' src='../assets/layouts/password-icon.svg' alt='Password Icon' /></span>
               </div>
+
+              <p className='modal__text' style={{marginTop: '-20px', paddingLeft: '0.5rem'}}><a href='#' style={{fontFamily: 'Helvetica-Neue Light', fontSize: '12px'}} onClick={openResetPasswordModal}>Forgot Password?</a></p>
+
               <input className='modal__form-submit' type='submit' value='Log In' />
             </form>
           </div>
@@ -44,7 +47,7 @@ const Login = ({ show, onCloseButtonClick }) => {
               />
             </button>
           </div>
-          <p className='modal__text'>Already have an account? <a href='#'>Log in</a></p>
+          <p className='modal__text'>Don't have an account yet? <a href='#' onClick={openSignUpModal}>Sign Up</a></p>
         </div>
       </div>
     </div>
