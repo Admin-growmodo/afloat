@@ -14,9 +14,9 @@
     margin-bottom: 16px;
 }
 .product__main-contents p {
-    color: #000000;
-    font-size: 16px;
-    font-family: var(--price-font);
+    color: #161616;
+    font-size: 18px;
+    font-family: 'Assistant-Regular';
     line-height: 24px;
     margin-bottom: 24px;
 }
@@ -109,10 +109,10 @@ button.slick-next img, button.slick-prev img, button.slick-next,button.slick-pre
     height: 40px;
 }
 .slick-prev {
-    left: -60px !important;
+    left: -50px !important;
 }
 .slick-next {
-    right: -60px !important;
+    right: -50px !important;
 }
 /**** Mobile Responsive ****/
 @media only screen and (max-width: 1400px) {
