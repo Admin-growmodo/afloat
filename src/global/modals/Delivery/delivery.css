@@ -1,0 +1,68 @@
+.modal-wrapper{
+    background-color: #00000033 !important;
+}
+
+.modal__container {
+    background: #fff;
+    width: 630px;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 24px;
+    border-radius: 8px;
+    z-index: 100;
+  }
+  
+  .modal__heading {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--accent-red-color);
+  }
+
+  .modal__body {
+    color: #161616;
+    margin-top: 40px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .modal__heading h3 {
+    font-family: var(--headings-font);
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0;
+  }
+  .modal__close {
+    border: 0;
+    background: #fff;
+    padding: 0;
+  }
+
+  .modal__button_container > button{
+    display: inline-grid;
+  }
+
+  .dont-add-to-bag{
+    background-color: #FFF2F2;
+    color:var(--accent-red-color) !important;
+    font-family: var(--add-to-cart);
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  .add-to-bag{
+    font-family: var(--add-to-cart);
+    font-weight: 400;
+    font-size: 18px;
+  }
+  
+  /**** Mobile Responsive ****/
+  @media only screen and (max-width: 768px) {
+    .modal__container{
+      width: 100%;
+    }
+  
+  }

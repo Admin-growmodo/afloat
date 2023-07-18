@@ -63,7 +63,9 @@ function Header() {
                 <div className="container">
                     <div className="row">
                         <div className="col-3 logo">
-                            <img src="../assets/layouts/afloat-logo.svg" alt="Logo" />
+                            <Link to="/homepage">
+                                <img src="../assets/layouts/afloat-logo.svg" alt="Logo" />
+                            </Link>
                         </div>
                         <div className="col-6 menu">
 

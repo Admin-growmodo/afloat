@@ -2,11 +2,18 @@ import './content.css'
 import Slider from "react-slick";
 import { useState } from 'react'
 import { SELECTED_PRODUCT } from './constant';
+import Delivery from '../../modals/Delivery/Delivery';
 
 function Content() {
     let product = SELECTED_PRODUCT[0]
     const [nav1, setNav1] = useState();
     const [nav2, setNav2] = useState();
+
+    const [showDelivery, setShowDelivery] = useState(false);
+
+    const toggleShowDelivery = () => {
+        setShowDelivery(!showDelivery);
+    }
 
     const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
         <button
@@ -81,7 +88,7 @@ function Content() {
                         <div className='product__main-contents'>
                             <h3>{product.title}</h3>
                             <p>{product.price}</p>
-                            <a href='#' className='primary-btn addtocart__btn'>Add to cart</a>
+                            <a href='#' className='primary-btn addtocart__btn' onClick={toggleShowDelivery}>Add to cart</a>                            
                         </div>
                         <div id='product__accordion' className='accordion'>
 
@@ -129,6 +136,9 @@ function Content() {
                     </div>
                 </div>
             </div>
+
+            <Delivery show={showDelivery} onCloseButtonClick={toggleShowDelivery} />
+
         </div>
     );
 }
