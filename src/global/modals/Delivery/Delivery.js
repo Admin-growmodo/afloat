@@ -22,7 +22,9 @@ const Delivery = ({ show, onCloseButtonClick }) => {
             <button className='modal__close' onClick={onCloseButtonClick}><img src='../assets/layouts/modal-close.svg' alt='Modal Close' /></button>
           </div>
           <div className='modal__body'>
-            Order by noon for local delivery today Thursday, June, 15th. Orders placed after noon today will be delivered on Friday, June 16th.
+            <p>
+              Order by noon for local delivery today Thursday, June, 15th. Orders placed after noon today will be delivered on Friday, June 16th.
+            </p>
           </div>
 
           <p className='modal__text'>
