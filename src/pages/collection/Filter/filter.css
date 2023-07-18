@@ -47,8 +47,9 @@ input[type="radio"]:before {
     height: 8px;
     content: '';
     display: block;
-    margin: 1px auto;
     border-radius: 50%;
+    margin-top: 1.5px;
+    margin-left: 1px;
 }
 input[type="radio"]:checked:before {
     background: var(--accent-red-color);

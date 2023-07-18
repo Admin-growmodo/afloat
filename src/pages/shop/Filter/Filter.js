@@ -32,14 +32,14 @@ function Filter() {
                                 <div ref={ref} className={`sidebar__list-mobile ` + (SortClicked ? 'show-list' : 'hide-list')}>
                                     <ul className='sidebar__list'>
                                         {FILTER_SORT.sort.map((loc) => (
-                                            <li><input type="radio" />{loc}</li>
+                                            <li><label><input type="radio" />{loc}</label></li>
                                         ))}
                                     </ul>
                                 </div>
 
                                 <ul className='sidebar__list-desktop'>
                                     {FILTER_PRODUCT && FILTER_SORT.sort.map((loc) => (
-                                        <li><input type="radio" />{loc}</li>
+                                        <li><label><input type="radio" />{loc}</label></li>
                                     ))}
                                 </ul>
 
@@ -50,14 +50,14 @@ function Filter() {
                                 <div ref={ref} className={`sidebar__list-mobile ` + (OccasionClicked ? 'show-list' : 'hide-list')}>
                                     <ul className='sidebar__list'>
                                         {FILTER_SORT.occasion.map((occ) => (
-                                            <li><input type="checkbox" />{occ}</li>
+                                            <li><label><input type="checkbox" />{occ}</label></li>
                                         ))}
                                     </ul>
                                 </div>
 
                                 <ul className='sidebar__list-desktop'>
                                     {FILTER_SORT && FILTER_SORT.occasion.map((occ) => (
-                                        <li><input type="checkbox" />{occ}</li>
+                                        <li><label><input type="checkbox" />{occ}</label></li>
                                     ))}
                                 </ul>
                             </div>
@@ -68,18 +68,18 @@ function Filter() {
                         <div className='shop__filter-result'>
                             {FILTER_PRODUCT && FILTER_PRODUCT.map((product) => (
                                 <div className='shop__filter-result--inner'>
-                                    <Link to="/product">
+                                   
                                         <div className='shop__filter-result--innerwrap'>
                                             <div className='shop__filter-result--img'>
-                                                <img src={product.image} alt="Dallas1" />
+                                            <Link to="/product"><img src={product.image} alt="Dallas1" /></Link>
                                                 <a className='add-to-cart-btn' href='#'><img src='../assets/layouts/shop/bag.svg' /></a>
                                             </div>
                                             <div className='shop__filter-result--wrap'>
-                                                <h3>{product.product_title}</h3>
+                                                <Link to="/product"><h3>{product.product_title}</h3></Link>
                                                 <p>{product.product_price}</p>
                                             </div>
                                         </div>
-                                    </Link>
+                                    
                                 </div>
                             ))}
                         </div>
