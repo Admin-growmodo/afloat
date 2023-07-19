@@ -2,6 +2,7 @@ import './filter.css'
 import { useState, useRef } from 'react';
 import { FILTER_SORT, FILTER_PRODUCT } from './constants';
 import { Link } from 'react-router-dom'
+import EmptyResult from '../../../global/EmptyResult';
 
 function Filter() {
     // const store = Object.keys(FILTER_SORT)[2] || '';
@@ -68,22 +69,24 @@ function Filter() {
                         <div className='shop__filter-result'>
                             {FILTER_PRODUCT && FILTER_PRODUCT.map((product) => (
                                 <div className='shop__filter-result--inner'>
-                                   
-                                        <div className='shop__filter-result--innerwrap'>
-                                            <div className='shop__filter-result--img'>
+
+                                    <div className='shop__filter-result--innerwrap'>
+                                        <div className='shop__filter-result--img'>
                                             <Link to="/product"><img src={product.image} alt="Dallas1" /></Link>
-                                                <a className='add-to-cart-btn' href='#'><img src='../assets/layouts/shop/bag.svg' /></a>
-                                            </div>
-                                            <div className='shop__filter-result--wrap'>
-                                                <Link to="/product"><h3>{product.product_title}</h3></Link>
-                                                <p>{product.product_price}</p>
-                                            </div>
+                                            <a className='add-to-cart-btn' href='#'><img src='../assets/layouts/shop/bag.svg' /></a>
                                         </div>
-                                    
+                                        <div className='shop__filter-result--wrap'>
+                                            <Link to="/product"><h3>{product.product_title}</h3></Link>
+                                            <p>{product.product_price}</p>
+                                        </div>
+                                    </div>
+
                                 </div>
                             ))}
                         </div>
-
+                        {FILTER_PRODUCT.length === 0 &&
+                            <EmptyResult/>
+                        }
                     </div>
                 </div>
             </div>

@@ -3,13 +3,18 @@ import Breadcrumbs from "./Breadcrumbs/Breadcrumbs";
 import Heading from "./Heading/Heading";
 import Content from "./Content/Content";
 import Related from "./Related/Related";
+import { useOutletContext } from "react-router-dom";
 
-function Product({ title, content, image, categories }) {
+function Product() {
+  const [showSidebar, setShowSidebar] = useOutletContext();
+  const triggerSidebar = (val) => {
+    setShowSidebar(val);
+  };
   return (
     <div className="single__product">
         <Breadcrumbs></Breadcrumbs>
         <Heading></Heading>
-        <Content></Content>
+        <Content triggerSidebar={triggerSidebar}></Content>
         <Related></Related>
     </div>
   );

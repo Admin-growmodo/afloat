@@ -1,0 +1,27 @@
+.cart__wrapper {
+    display: flex;
+    gap: 15px;
+}
+.cart__wrapper-col--image {
+    width: 124px;
+    height: 124px;
+}
+p.cart__title {
+    font-size: 24px;
+    color: #161616;
+    line-height: 32px;
+    font-family: var(--headings-font);
+    margin-bottom: 16px;
+}
+p.cart__price {
+    margin-bottom: 16px;
+    color: #161616;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: var(--add-to-cart);
+}
+.cart__quantity-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
