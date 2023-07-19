@@ -1,12 +1,7 @@
 import './breadcrumbs.css'
-<<<<<<< HEAD
 import { Link } from 'react-router-dom'
 
-=======
-import {useNavigate} from 'react-router-dom';
->>>>>>> 362432c (Fix header spacing and breacrumbs linking)
 function Breadcrumbs() {
-    const navigate = useNavigate();
     return (
         <div className='breadcrumbs'>
             <div className='container'>

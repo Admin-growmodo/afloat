@@ -12,7 +12,6 @@ function Header({ triggerSidebar }) {
     const ref = useRef(null);
     const [burgerClicked, setBurgerClicked] = useState(false);
     const [openProfile, setOpenProfile] = useState(false);
-    const ref = useRef(null);
 
     const [showSignUp, setShowSignUp] = useState(false);
     const [showLogin, setShowLogin] = useState(false);
