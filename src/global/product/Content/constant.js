@@ -2,7 +2,7 @@ export const SELECTED_PRODUCT = [
     {
         images: [
             '../assets/layouts/product/product-sample-image01.png',
-            '../assets/layouts/product/product-sample-image02.png',
+            '../assets/layouts/product/product-sample-image02-3x.png',
         ],
         title: 'Bits of Dallas Gift Box',
         price: '$149.00 USD',

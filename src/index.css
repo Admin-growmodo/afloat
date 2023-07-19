@@ -81,18 +81,34 @@ body{
   max-width: 1280px;
   margin: 0 auto;
 }
-.primary-btn {
+.primary-btn{
+  font-family: var(--add-to-cart);
   background-color: var(--accent-red-color);
-  color: #fff;
+  color: #fff !important;
   font-size: 18px;
   text-transform: uppercase;
   display: block;
   border: 0;
   border-radius: 8px;
   padding: 13px 16px;
-  line-height: 21.47px;
+  line-height: 24px;
+  text-align: center;
+}
+.secondary-btn {
+  font-family: var(--add-to-cart);
+  background-color: #FFF2F2;
+  color: var(--accent-red-color) !important;
+  font-size: 18px;
+  text-transform: uppercase;
+  display: block;
+  border: 0;
+  border-radius: 8px;
+  padding: 13px 16px;
+  line-height: 24px;
+  text-align: center;
 }
 .shop__now-btn {
+  font-family: var(--add-to-cart);
   background-color: var(--accent-red-color);
   color: #fff !important;
   font-size: 18px !important;
@@ -101,7 +117,8 @@ body{
   border: 0;
   border-radius: 8px;
   padding: 13px 16px !important;
-  line-height: 21.47px;
+  line-height: 24px;
+  text-align: center;
 }
 input{
   color: var(--accent-gray-color);
@@ -167,6 +184,7 @@ html:has(.modal-wrapper) {
   position: fixed;
   width: 100%;
   top: 0;
+  left: 0;
   height: 100%;
   background: #00000033;
   z-index: 10;

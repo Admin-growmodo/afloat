@@ -60,7 +60,7 @@
 .related__filter-result--wrap p {
     color: #000000;
     font-size: 16px;
-    font-family: var(--price-font);
+    font-family: var(--add-to-cart);
     line-height: 24px;
     text-align: center;
 }

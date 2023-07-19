@@ -7,7 +7,8 @@
 }
 .breadcrumbs__list {
     font-size: 14px;
-    text-transform: uppercase;
+    font-family: var(--add-to-cart);
+    line-height: 22px;
 }
 .breadcrumbs__list-main {
     color: #161616 !important;

@@ -38,7 +38,7 @@ function Filter() {
             <div className='container'>
                 <div className='row collection__filter-col justify-content-between'>
                     <div className='col-3'>
-                        <div className='sidebar'>
+                        <div className='sidebar--filter'>
                             <div className='sidebar__location'>
                                 <span className='sidebar__label'>{Object.keys(FILTER_CONSTANTS)[0]}</span>
                                 <span className={`sidebar__label-arrow ` + (LocationClicked ? '' : '')} onClick={() => triggerLocationClicked()}><img src='/assets/layouts/chevron-up.svg' alt="up arrow" /></span>

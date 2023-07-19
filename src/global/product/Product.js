@@ -12,10 +12,10 @@ function Product() {
   };
   return (
     <div className="single__product">
-        <Breadcrumbs></Breadcrumbs>
-        <Heading></Heading>
-        <Content triggerSidebar={triggerSidebar}></Content>
-        <Related></Related>
+      <Breadcrumbs></Breadcrumbs>
+      <Heading></Heading>
+      <Content triggerSidebar={triggerSidebar}></Content>
+      <Related></Related>
     </div>
   );
 }
