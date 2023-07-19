@@ -168,7 +168,7 @@ html:has(.modal-wrapper) {
   width: 100%;
   top: 0;
   height: 100%;
-  background-color: #c4c4c4;
+  background: #00000033;
   z-index: 10;
   padding: 0 30px;
 }

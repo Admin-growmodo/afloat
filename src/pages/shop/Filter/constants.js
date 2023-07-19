@@ -68,5 +68,4 @@ export const FILTER_PRODUCT = [
         product_title: 'Gentleman Gift Box',
         product_price: '$149.00 USD'
     }
-
 ]
