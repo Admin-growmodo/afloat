@@ -2,12 +2,23 @@ import './content.css'
 import Slider from "react-slick";
 import { useState } from 'react'
 import { SELECTED_PRODUCT } from './constant';
+import ProductModal from '../../modals/ProductModal/ProductModal'
 
-function Content({triggerSidebar}) {
+function Content({ triggerSidebar }) {
     let product = SELECTED_PRODUCT[0]
     const [nav1, setNav1] = useState();
     const [nav2, setNav2] = useState();
+    const [showModal, setShowModal] = useState(false);
 
+    const toggleShowModal = () => {
+        setShowModal(!showModal);
+    };
+
+    const toggleSidebar = () => {
+        triggerSidebar(true);
+        setShowModal(false)
+    };
+    
     const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
         <button
             {...props}
@@ -81,8 +92,8 @@ function Content({triggerSidebar}) {
                         <div className='product__main-contents'>
                             <h3>{product.title}</h3>
                             <p>{product.price}</p>
-                            <button className='primary-btn addtocart__btn' onClick={() => triggerSidebar(true)}>Add to cart</button>
-                            {/* <a href='#' className='primary-btn addtocart__btn'>Add to cart</a> */}
+                            <button className='primary-btn addtocart__btn' onClick={() => setShowModal(true)}>Add to cart</button>
+                            <ProductModal show={showModal} onCloseButtonClick={toggleShowModal} openSidebar={toggleSidebar} />
                         </div>
                         <div id='product__accordion' className='accordion'>
 

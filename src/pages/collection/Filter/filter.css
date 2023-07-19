@@ -13,23 +13,22 @@
 .sidebar__occasion, .sidebar__storetype {
     margin-top: 80px;
 }
-.sidebar span.sidebar__label {
+.sidebar--filter span.sidebar__label {
     color: #161616;
     margin-bottom: 24px;
     display: block;
-    font-family: 'Helvetica-Neue Light';
-    font-style: italic;
+    font-family: var(--add-to-cart);
     font-size: 16px;
-    line-height: 19.07px;
+    line-height: 24px;
 }
-.sidebar li {
-    font-family: 'Helvetica-Neue Light';
+.sidebar--filter li {
+    font-family: var(--add-to-cart);
     color: #161616;
-    font-size: 18px;
-    line-height: 21.76px;
+    font-size: 14px;
+    line-height: 22px;
     margin-bottom: 16px;
 }
-.sidebar input {
+.sidebar--filter input {
     accent-color: var(--accent-red-color);
     margin-right: 8px;
 }
@@ -126,7 +125,7 @@ input[type="checkbox"]:checked:before {
     text-transform: capitalize;
 }
 .collection__filter-result--wrap h3 {
-    color: #000000;
+    color: #161616;
     font-size: 18px;
     text-transform: uppercase;
     line-height: 23.04px;
@@ -134,10 +133,10 @@ input[type="checkbox"]:checked:before {
     margin-bottom: 12px;
 }
 .collection__filter-result--wrap p {
-    color: #000000;
-    font-size: 16px;
-    font-family: 'Helvetica-Neue Light';
-    line-height: 24px;
+    color: #161616;
+    font-size: 14px;
+    font-family: var(--add-to-cart);
+    line-height: 22px;
 }
 .sidebar__location, .sidebar__occasion, .sidebar__storetype{
     position: relative;
@@ -174,10 +173,10 @@ input[type="checkbox"]:checked:before {
     .sidebar__occasion, .sidebar__storetype{
         margin-top: 30px;
     }
-    .sidebar span.sidebar__label{
+    .sidebar--filter span.sidebar__label{
         margin-bottom: 15px !important;
     }
-    .sidebar {
+    .sidebar--filter {
         padding-right: 16px;
     }
     .sidebar__label-arrow{

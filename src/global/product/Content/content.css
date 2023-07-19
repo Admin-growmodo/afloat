@@ -8,15 +8,15 @@
     justify-content: space-between;
 }
 .product__main-contents h3 {
-    line-height: 46.08px;
-    font-size: 36px;
+    line-height: 48px;
+    font-size: 32px;
     font-family: var(--headings-font);
     margin-bottom: 16px;
 }
 .product__main-contents p {
     color: #000000;
-    font-size: 16px;
-    font-family: var(--price-font);
+    font-size: 18px;
+    font-family: var(--add-to-cart);
     line-height: 24px;
     margin-bottom: 24px;
 }
@@ -33,14 +33,14 @@
 .accordion-button {
     color: #161616 !important;
     font-size: 24px;
-    line-height: 30.72px;
+    line-height: 32px;
     font-family: var(--headings-font);
     padding: 20px 0 !important;
 }
 .accordion-body {
-    font-family: var(--price-font);
-    font-size: 20px;
-    line-height: 28px;
+    font-family: var(--add-to-cart);
+    font-size: 18px;
+    line-height: 24px;
     color: #161616;
     padding: 20px 0 !important;
 }
@@ -70,13 +70,13 @@ img.delivery-expectations-icon {
     margin-right: 12px;
 }
 .accordion-button:not(.collapsed)::after {
-    background-image: url(http://localhost:3000/assets/layouts/product/accordion-minus.svg) !important;
+    background-image: url(https://afloat-pied.vercel.app/assets/layouts/product/accordion-minus.svg) !important;
     width: 24px;
     height: 24px;
     background-position: 50% 50%;
 }
 .accordion-button::after{
-    background-image: url(http://localhost:3000/assets/layouts/product/accordion-plus.svg) !important;
+    background-image: url(https://afloat-pied.vercel.app/assets/layouts/product/accordion-plus.svg) !important;
 }
 .accordion-button:focus{
     border: 0 !important;
@@ -129,6 +129,9 @@ button.slick-next img, button.slick-prev img, button.slick-next,button.slick-pre
     .product__main-images--wrapper {
         padding-right: 30px;
     }
+    .product__main-images--wrapper .slick-slider:first-child {
+        padding: 0 40px;
+    }
 }
 @media only screen and (max-width: 1024px) {
     .product__main-images--preview img {
@@ -157,5 +160,21 @@ button.slick-next img, button.slick-prev img, button.slick-next,button.slick-pre
     }
     #product__accordion{
         margin-top: 20px !important;
+    }
+    .product__main-contents h3 {
+        font-size: 25px !important;
+    }
+    .accordion-button{
+        font-size: 18px !important;
+        padding: 15px 0 !important;
+    }
+    .accordion-body {
+        padding: 0 0 15px !important;
+    }
+    .related{
+        padding: 20px 0 !important;
+    }
+    .accordion-body{
+        font-size: 16px !important;
     }
 }

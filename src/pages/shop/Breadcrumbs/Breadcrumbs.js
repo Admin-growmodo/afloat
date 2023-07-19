@@ -1,4 +1,6 @@
 import './breadcrumbs.css'
+import { Link } from 'react-router-dom'
+
 function Breadcrumbs() {
     return (
         <div className='breadcrumbs'>
@@ -6,11 +8,11 @@ function Breadcrumbs() {
                 <div className='row breadcrumbs__list'>
                     <div className='col-12'>
                         <ul>
-                            <li><a className="breadcrumbs__list-main" href="">Home</a></li>
+                            <li><Link className="breadcrumbs__list-main" to="/homepage">Home</Link></li>
                             <li><img src='../assets/layouts/collection/breadcrumbs-seperator.svg' alt="Breadcrumb Icon Seperator"/></li>
-                            <li><a className="breadcrumbs__list-category" href="">Afloat collection</a></li>
+                            <li><Link className="breadcrumbs__list-category" to="/collection">Afloat collection</Link></li>
                             <li><img src='../assets/layouts/collection/breadcrumbs-seperator.svg' alt="Breadcrumb Icon Seperator"/></li>
-                            <li><a className="breadcrumbs__list-current" href="">A Box of Dallas</a></li>
+                            <li><Link className="breadcrumbs__list-current" to="/shop">A Box of Dallas</Link></li>
                         </ul>
                     </div>
                 </div>

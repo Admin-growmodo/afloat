@@ -11,7 +11,7 @@
 }
 .shop__heading-col p {
     color: #161616;
-    font-family: 'Helvetica-Neue Light';
-    font-size: 16px;
-    line-height: 19.34px;
+    font-family: var(--add-to-cart);
+    font-size: 14px;
+    line-height: 22px;
 }
