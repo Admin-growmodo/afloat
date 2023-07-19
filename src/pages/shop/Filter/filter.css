@@ -172,8 +172,18 @@ input[type="checkbox"]:checked:before {
     width: 32px;
     height: 32px;
 }
-
-
+.shop__filter-result-empty-inner {
+    text-align: center;
+    width: 100%;
+    margin-top: 188px;
+}
+.shop__filter-result-empty-inner  span{
+    margin-bottom: 35px;
+    display: inline-block;
+    font-family: 'Assistant-Regular';
+    font-size: 14px;
+    line-height: 22px;
+}
 /**** Mobile Responsive ****/
 @media only screen and (max-width: 1024px) {
     .shop__filter-result--inner {
@@ -205,10 +215,16 @@ input[type="checkbox"]:checked:before {
     .sidebar__list-desktop{
         display: none;
     }
+    .shop__filter-result-empty-inner {
+        margin-top: 40px;
+    }
 }
 @media only screen and (max-width: 600px) {
     .shop__filter-result--inner{
         flex-basis: 100% !important;
+    }
+    .shop__filter-result-empty-inner {
+        padding-bottom: 100px;
     }
 }
 @media only screen and (max-width: 450px) {

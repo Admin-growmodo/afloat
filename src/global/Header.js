@@ -3,16 +3,81 @@ import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom'
 import SignUp from '../global/modals/SignUp/SignUp'
 import Login from '../global/modals/Login/Login'
+import ResetPassword from '../global/modals/ResetPassword/ResetPassword';
+import ResetEmailSent from '../global/modals/ResetPassword/ResetEmailSent';
+import ResetPasswordForm from '../global/modals/ResetPassword/ResetPasswordForm';
+import ResetSuccessfull from './modals/ResetPassword/ResetSuccessfull';
 
 function Header({ triggerSidebar }) {
     const ref = useRef(null);
     const [burgerClicked, setBurgerClicked] = useState(false);
     const [openProfile, setOpenProfile] = useState(false);
-    const [showModal, setShowModal] = useState(false);
+
+    const [showSignUp, setShowSignUp] = useState(false);
     const [showLogin, setShowLogin] = useState(false);
-    
-    const toggleShowModal = () => {
-        setShowModal(!showModal);
+    const [showResetPassword, setShowResetPassword] = useState(false);
+    const [showResetEmailSent, setShowResetEmailSent] = useState(false);
+    const [showResetPasswordForm, setShowResetPasswordForm] = useState(false);
+    const [showResetSuccessfull, setShowResetSuccessfull] = useState(false);
+
+    const [emailReset, setEmailReset] = useState('');
+
+    const openSignUpModal = () => {
+        setShowSignUp(true);
+        setShowLogin(false);
+        setShowResetPassword(false)
+        setShowResetEmailSent(false)
+        setShowResetPasswordForm(false);
+        setShowResetSuccessfull(false);
+    }
+
+    const openLoginModal = () => {
+        setShowLogin(true);
+        setShowSignUp(false);
+        setShowResetPassword(false)
+        setShowResetEmailSent(false)
+        setShowResetPasswordForm(false);
+        setShowResetSuccessfull(false);
+    }
+
+    const openResetPasswordModal = () => {
+        setShowResetPassword(true)
+        setShowLogin(false);
+        setShowSignUp(false);
+        setShowResetEmailSent(false)
+        setShowResetPasswordForm(false);setShowResetSuccessfull(false);
+    }
+
+    const openResetEmailSent = (email) => {
+        setEmailReset(email)
+        setShowResetEmailSent(true)
+        setShowResetPassword(false)
+        setShowLogin(false);
+        setShowSignUp(false);
+        setShowResetPasswordForm(false);
+        setShowResetSuccessfull(false);
+    }
+
+    const openResetPasswordForm = () => {
+        setShowResetPasswordForm(true);
+        setShowResetEmailSent(false)
+        setShowResetPassword(false)
+        setShowLogin(false);
+        setShowSignUp(false);
+        setShowResetSuccessfull(false);
+    }
+
+    const openResetSuccessfull = () => {
+        setShowResetSuccessfull(true);
+        setShowResetPasswordForm(false);
+        setShowResetEmailSent(false)
+        setShowResetPassword(false)
+        setShowLogin(false);
+        setShowSignUp(false);
+    }
+
+    const toggleShowSignUp = () => {
+        setShowSignUp(!showSignUp);
     };
 
     const toggleShowLogin = () => {
@@ -102,7 +167,7 @@ function Header({ triggerSidebar }) {
                                                     <li><a className='user__menu-profile' href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" clipRule="evenodd" d="M8.375 7C8.375 4.99797 9.99797 3.375 12 3.375C14.002 3.375 15.625 4.99797 15.625 7C15.625 9.00203 14.002 10.625 12 10.625C9.99797 10.625 8.375 9.00203 8.375 7ZM12 2.625C9.58375 2.625 7.625 4.58375 7.625 7C7.625 9.41625 9.58375 11.375 12 11.375C14.4162 11.375 16.375 9.41625 16.375 7C16.375 4.58375 14.4162 2.625 12 2.625ZM5.375 18.3333C5.375 16.6905 6.67107 15.375 8.25 15.375H15.75C17.3289 15.375 18.625 16.6905 18.625 18.3333V19.625H5.375V18.3333ZM8.25 14.625C6.23907 14.625 4.625 16.2943 4.625 18.3333V20C4.625 20.2071 4.79289 20.375 5 20.375H19C19.2071 20.375 19.375 20.2071 19.375 20V18.3333C19.375 16.2943 17.7609 14.625 15.75 14.625H8.25Z" fill="#999CA0" /></svg><span>Profile</span></a></li>
                                                     <li><a className='user__menu-orders' href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clipPath="url(#clip0_585_2795)"><path d="M20.25 10.35C20.2195 9.26842 20.1171 8.57872 19.7703 7.9905C19.2765 7.15312 18.3881 6.687 16.6121 5.7564L14.9608 4.89015C13.511 4.13032 12.786 3.75 12.0066 3.75C11.2272 3.75 10.5023 4.1295 9.05239 4.89015L7.40107 5.7564C5.62508 6.687 4.73666 7.15312 4.24292 7.9905C3.75 8.82705 3.75 9.86902 3.75 11.9505V12.047C3.75 14.1302 3.75 15.1721 4.24292 16.0087C4.73666 16.846 5.62508 17.3122 7.40107 18.2436L9.05239 19.109C10.5023 19.8697 11.2272 20.25 12.0066 20.25C12.786 20.25 13.511 19.8705 14.9608 19.1098L16.6121 18.2436C18.3881 17.3122 19.2765 16.8469 19.7703 16.0095C20.1171 15.4213 20.2195 14.7316 20.25 13.65M19.4376 8.2875L16.1349 9.9375M16.1349 9.9375L15.7221 10.1437L12.0066 12M16.1349 9.9375V12.825M16.1349 9.9375L8.29113 5.8125M12.0066 12L4.57566 8.2875M12.0066 12V19.8375" stroke="#999CA0" strokeWidth="0.75" strokeLinecap="round" /></g><defs><clipPath id="clip0_585_2795"><rect width="18" height="18" fill="white" transform="translate(3 3)" /></clipPath></defs></svg><span>My orders</span></a></li>
                                                     <li><a className='user__menu-logout' href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 12L7.69231 12M7.69231 12L11.3846 8.30769M7.69231 12L11.3846 15.6923M9.53846 4L6.46154 4C5.10207 4 4 5.10207 4 6.46154L4 17.5385C4 18.8979 5.10207 20 6.46154 20L9.53846 20" stroke="#999CA0" strokeLinecap="round" strokeLinejoin="round" /></svg><span>Logout</span></a></li>
-                                                    <li><button className='user__menu-signup' onClick={toggleShowModal}>Sign Up</button></li>
+                                                    <li><button className='user__menu-signup' onClick={toggleShowSignUp}>Sign Up</button></li>
                                                     <li><button className='user__menu-login' onClick={toggleShowLogin}>Login</button></li>
                                                 </ul>
                                             }
@@ -118,8 +183,42 @@ function Header({ triggerSidebar }) {
                     </div>
                 </div>
             </div>
-            <SignUp show={showModal} onCloseButtonClick={toggleShowModal} />
-            <Login show={showLogin} onCloseButtonClick={toggleShowLogin} />
+            <SignUp show={showSignUp} onCloseButtonClick={toggleShowSignUp} openLoginModal={openLoginModal} />
+            <Login
+              show={showLogin}
+              openSignUpModal={openSignUpModal}
+              onCloseButtonClick={toggleShowLogin}
+              openResetPasswordModal={openResetPasswordModal}
+            />
+            <ResetPassword
+              show={showResetPassword}
+              openLoginModal={openLoginModal}
+              onCloseButtonClick={openLoginModal}
+              openResetEmailSent={openResetEmailSent}
+            />
+
+           <ResetEmailSent
+              show={showResetEmailSent}
+              openLoginModal={openLoginModal}
+              onCloseButtonClick={openLoginModal}
+              openResetPasswordModal={openResetPasswordModal}
+              openResetPasswordForm={openResetPasswordForm}
+              emailReset={emailReset}
+            />
+
+            <ResetPasswordForm
+              show={showResetPasswordForm}
+              openLoginModal={openLoginModal}
+              onCloseButtonClick={openLoginModal}
+              openResetSuccessfull={openResetSuccessfull}
+            />
+
+            <ResetSuccessfull
+              show={showResetSuccessfull}
+              openLoginModal={openLoginModal}
+            />
+            
+
         </>
     );
 }
