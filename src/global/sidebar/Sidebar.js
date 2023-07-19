@@ -10,8 +10,8 @@ function Sidebar({ show, triggerSidebar }) {
     }
 
     return (
-        <div className='sidebar__overlay'>
-            <div className='sidebar'>
+        <div className='sidebar__overlay slide-right'>
+            <div className='sidebar slide-left'>
                 <div className='sidebar__heading'>
                     <h3>Your cart</h3>
                     <button className='sidebar__close' onClick={() => triggerSidebar(false)}><img src='../assets/layouts/modal-close.svg' alt='Sidebar Close' /></button>
@@ -19,7 +19,7 @@ function Sidebar({ show, triggerSidebar }) {
                 <div className='sidebar__text'>
                     <p>Our gift to you - use code WELCOMEGIFT for free delivery on your first gift sent with Afloat!</p>
                 </div>
-                <Cart product_images={products.images[0]} product_title={products.title} product_price={products.price} product_quanity={1}/>
+                <Cart product_images={products.images[0]} product_title={products.title} product_price={products.price} product_quanity={1} />
                 
             </div>
         </div>
