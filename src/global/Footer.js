@@ -1,5 +1,10 @@
-import '../styles/global/footer.css'
+import '../styles/global/footer.css';
+import { Link } from 'react-router-dom';
 function Footer() {
+    const scrollToTop = () => {
+        window.scrollTo(0, 0);
+    }
+
   return (
     <footer>
       <div className="footer">
@@ -7,7 +12,7 @@ function Footer() {
           <div className="container">
             <div className="row">
               <div className="col-3 footer__wrapper-col">
-                <img src="../assets/layouts/footer-logo.svg" alt="Footer Logo" />
+                <Link onClick={scrollToTop} to="/homepage"><img src="../assets/layouts/footer-logo.svg" alt="Footer Logo" /></Link>
                 <p>3738 Haggar Way Dallas, TX 12345</p>
                 <div className="social__icons">
                   <img src="../assets/layouts/instagram.svg" />
