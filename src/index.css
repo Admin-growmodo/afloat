@@ -321,6 +321,17 @@ html:has(.modal-wrapper) {
     padding-right: 20px;
   }
 }
+@media only screen and (max-width: 320px) {
+    .container{
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .header .container {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+}
 
 /**** Animation Keyframes ****/
 .slide-right{
