@@ -1,6 +1,6 @@
 import '../styles/global/header.css'
 import { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import SignUp from '../global/modals/SignUp/SignUp'
 import Login from '../global/modals/Login/Login'
 import ResetPassword from '../global/modals/ResetPassword/ResetPassword';
@@ -10,6 +10,7 @@ import ResetSuccessfull from './modals/ResetPassword/ResetSuccessfull';
 import NewsLetterSignUp from './modals/NewsLetterSignUp/NewsLetterSignUp';
 
 function Header({ triggerSidebar }) {
+    const location = useLocation();
     const ref = useRef(null);
     const [burgerClicked, setBurgerClicked] = useState(false);
     const [openProfile, setOpenProfile] = useState(false);
@@ -143,10 +144,10 @@ function Header({ triggerSidebar }) {
 
                             <div className={`menu__desktop`}>
                                 <ul>
-                                    <li><Link className='menu__active' to="/homepage">Home</Link></li>
+                                    <li><Link className={location.pathname == '/homepage' ? 'menu__active' : '' } to="/homepage">Home</Link></li>
                                     <li><a href="#">About Us</a></li>
                                     <li><a href="#">Contact</a></li>
-                                    <li><Link to="/collection">Afloat Collection</Link></li>
+                                    <li><Link className={location.pathname == '/collection' ? 'menu__active' : '' } to="/collection">Afloat Collection</Link></li>
                                     <li><a href="#">for merchants</a></li>
                                 </ul>
                             </div>
