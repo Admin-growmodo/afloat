@@ -11,6 +11,7 @@ import Collection from '../pages/collection/Collection';
 import Homepage from '../pages/homepage/Homepage';
 import Shop from '../pages/shop/Shop';
 import Product from '../global/product/Product';
+import Checkout from '../pages/checkout/Checkout';
 
 
 export default function Root() {
@@ -39,6 +40,10 @@ export default function Root() {
         {
           path: "product",
           element: <Product />,
+        },
+        {
+            path: "checkout",
+            element: <Checkout />,
         },
       ]
     },

@@ -1,0 +1,84 @@
+.checkout-page-container  {
+    margin-bottom: 45px;
+}
+
+.checkout-page-container .add-more-items-container{
+    display: flex;
+    align-items: center;
+}
+
+.checkout-page-container .add-more-items-container svg {
+    flex-shrink: 0;
+    /* Prevent the SVG from shrinking */
+    margin-right: 8px;
+    /* Add some space between the SVG and the text */
+}
+
+.checkout-page-container .add-more-items-container span {
+    color: var(--accent-red-color);
+    font-family: var(--add-to-cart);
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.checkout-page-container .row-1 .right-panel {
+    margin-top: 47px;
+    border-left: 1px solid rgba(	22, 22, 22, 0.1);
+    padding: 0 47px;
+}
+
+
+.checkout-page-container .row-1 .right-panel h3 {
+    color: #161616;
+    font-family: var(--headings-font);
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.checkout-page-container .row-1 .right-panel .section {
+    margin-bottom: 39px;
+}
+
+.checkout-page-container .row-1 .right-panel input {
+    margin-bottom: 12px;
+    padding: 12px 16px;
+}
+
+.checkout-page-container .row-1 .right-panel .primary-btn{
+    width: 100%
+}
+
+/* Mobile responsiveness */
+@media (max-width: 767px) {
+    .checkout-page-container .row-1 {
+      flex-direction: column; /* Change to a column layout */
+    }
+  
+    .checkout-page-container .row-1 .col-6,
+    .checkout-page-container .row-1 .right-panel {
+      width: 100%; /* Make the columns take up full width on mobile */
+    }
+
+    .checkout-page-container .row-1 .right-panel {
+        padding: 0px;
+        border-left: none;
+    }
+  
+    /* Override the width of .col-8 to expand to .col-12 on mobile */
+    .checkout-page-container .row-1 .col-8 {
+      width: 100%;
+    }
+  }
+  
+  /* Tablet responsiveness */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    /* Add specific styles for tablet view here */
+    .checkout-page-container .row-1 .col-6 {
+      width: 50%; /* Make each column take up 50% width on tablet */
+    }
+  
+    .checkout-page-container .row-1 .right-panel {
+      width: 50%;
+    }
+  }

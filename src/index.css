@@ -120,7 +120,7 @@ body{
   line-height: 24px;
   text-align: center;
 }
-input{
+input, textarea{
   color: var(--accent-gray-color);
   border: 1px solid #00000033;
   padding: 15px 16px;

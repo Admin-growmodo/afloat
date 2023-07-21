@@ -1,0 +1,17 @@
+.global__heading-col {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #FA5959;
+}
+.global__heading-col h1 {
+    color: #FA5959;
+    font-family: var(--headings-font);
+    font-size: 24px;
+    line-height: 30.72px;
+    margin-bottom: 8px;
+}
+.global__heading-col p {
+    color: #161616;
+    font-family: var(--add-to-cart);
+    font-size: 14px;
+    line-height: 22px;
+}

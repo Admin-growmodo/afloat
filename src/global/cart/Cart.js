@@ -1,6 +1,6 @@
 import './cart.css'
 import { useState } from 'react'
-function Cart({ product_images,product_title, product_price, product_quanity}) {
+function Cart({ product_images,product_title, product_price, product_quanity, dontDisplayCheckoutBtn = false}) {
     const [count, setCount] = useState(1);
     const handleAddQuantity = (num, action) => {
         if (action === 'add') {
@@ -55,9 +55,14 @@ function Cart({ product_images,product_title, product_price, product_quanity}) {
                 <h3 className='cart__delivery-title'><img className='delivery-expectations-icon' src='../assets/layouts/product/delivery-expectations-icon.svg' alt="delivery" />Delivery expectations</h3>
                 <p className='cart__delivery-text'>Order by noon for local delivery today Thursday, June, 15th. Orders placed after noon today will be delivered on Friday, June 16th.</p>                   
             </div>
+            {dontDisplayCheckoutBtn 
+            ? ''
+            :
             <div className='cart__checkout'>
                 <button className='cart__checkout-btn primary-btn'>Checkout</button>
             </div>
+            }
+
         </div>
     );
 }
