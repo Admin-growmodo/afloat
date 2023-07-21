@@ -96,6 +96,10 @@ function Header({ triggerSidebar }) {
 
     }
 
+    const handleCloseMobileNavMenu = () => {
+        setBurgerClicked(false);
+    }
+
     const handleClickOutside = (event) => {
         if (ref.current && !ref.current.contains(event.target)) {
             setBurgerClicked(false);
@@ -147,6 +151,7 @@ function Header({ triggerSidebar }) {
                                 </ul>
                             </div>
                             <div ref={ref} className={`menu__mobile ` + (burgerClicked ? 'show' : 'hide')}>
+                                <button onClick={handleCloseMobileNavMenu} className='menu__mobile-close-btn'><img src='../assets/layouts/modal-close.svg' alt='Modal Close' /></button>
                                 <ul>
                                     <li><a className='menu__active' href="#">Home</a></li>
                                     <li><a href="#">About Us</a></li>

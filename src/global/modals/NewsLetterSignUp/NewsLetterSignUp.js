@@ -23,7 +23,7 @@ const NewsLetterSignUp = ({ show, onCloseButtonClick }) => {
             <button className='modal__close' onClick={onCloseButtonClick}><img src='../assets/layouts/modal-close.svg' alt='Modal Close' /></button>
           </div>
 
-          <h4 class="newsletter__signup-subheading">
+          <h4 className="newsletter__signup-subheading">
             Sign up to be an Afloat insider and receive the latest scoop on new gifts, stores, and features added to the app.
           </h4>
           

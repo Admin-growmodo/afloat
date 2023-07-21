@@ -1,8 +1,35 @@
 import '../styles/global/footer.css';
 import { Link } from 'react-router-dom';
+import {useRef} from 'react';
 function Footer() {
+    const formFeedback = useRef(null);
+    const newsLetterForm = useRef(null);
+    const inputEmail = useRef(null);
+    const inputZip = useRef(null);
+    const formSubmitBtn = useRef(null);
+
     const scrollToTop = () => {
         window.scrollTo(0, 0);
+    }
+
+    const handleNewsLetterSignUp = (e) => {
+        e.preventDefault();
+
+        console.log('clicked me')
+
+        if (newsLetterForm.current.checkValidity() && (inputEmail.current.value.length > 0)) {
+
+            formFeedback.current.style.visibility  = 'visible';
+            inputEmail.current.disabled = true;
+            inputZip.current.disabled = true;
+            formSubmitBtn.current.style.cursor = 'default';
+
+            /* Disaable submit button in appearance and funcionality*/
+            formSubmitBtn.current.style.backgroundColor = '#586D82';
+
+            
+            formFeedback.current.removeEventListener('submit', handleNewsLetterSignUp);
+        }
     }
 
   return (
@@ -42,11 +69,17 @@ function Footer() {
               <div className="col-3 footer__wrapper-col">
                 <h2>TREAT YO'SELF.</h2>
                 <span>Gift us your email for the insider scoop on new store, products and giveaways.</span>
-                <form id="form-footer">
-                  <input type="email" placeholder="Enter your email" />
-                  <input type="text" placeholder="Enter your zipcode" />
-                  <button className="primary-btn" type="submit">Send</button>
+                <form id="form-footer" ref={newsLetterForm} onSubmit={handleNewsLetterSignUp}>
+                  <input required type="email" placeholder="Enter your email" ref={inputEmail}/>
+                  <input required type="number" pattern="\d*" inputMode="numeric" placeholder="Enter your zipcode" ref={inputZip} />
+                  <button ref={formSubmitBtn}className="primary-btn" type="submit">Send</button>
                 </form>
+                <span
+                  className="form-feedback"
+                  ref={formFeedback}
+                >
+                    E-mail successfully sent!
+                </span>
               </div>
             </div>
           </div>
