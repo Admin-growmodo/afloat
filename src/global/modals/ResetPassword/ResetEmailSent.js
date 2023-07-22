@@ -31,7 +31,7 @@ const ResetEmailSent = ({ show, openLoginModal, openResetPasswordModal,openReset
           <div className='reset__pass-form'>
             <p className='reset__pass-guide'>We have sent an email with password reset information to {emailReset}.</p>
 
-            <p className='reset__pass-guide'>Didn't recedive the email? Check spam or promotion folder.</p>
+            <p className='reset__pass-guide'>Didn't receive the email? Check spam or promotion folder.</p>
 
 
             <form className='form-reset-pass'>

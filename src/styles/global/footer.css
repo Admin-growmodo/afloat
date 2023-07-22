@@ -91,11 +91,22 @@ form#form-footer {
     display: flex;
     justify-content: space-between;
 }
+form#form-footer input[type="number"]::-webkit-outer-spin-button,
+form#form-footer input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 form#form-footer input:first-child {
     margin-right: 16px;
 }
 form#form-footer input:nth-child(2) {
     margin-right: 8px;
+}
+.footer .form-feedback {
+    font-size: 12px;
+    padding-left: 5px;
+    color: var(--accent-red-color);
+    visibility: hidden;
 }
 /**** Mobile Responsive ****/
 @media only screen and (max-width: 768px) {

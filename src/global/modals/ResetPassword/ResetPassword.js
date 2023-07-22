@@ -31,24 +31,20 @@ const ResetPassword = ({ show, openLoginModal,onCloseButtonClick, openResetEmail
   }
 
   const transformEmail = (email) => {
-    
     const [username, domain] = email.split('@');
 
     const transformedUsername = username.replace(/^(.)(.*?)(.)$/, (_, firstChar, maskedChars, lastChar) => {
       const maskedMiddleChars = maskedChars.replace(/./g, "*");
       return `${firstChar}${maskedMiddleChars}${lastChar}`;
     });
-    
-    const transformedDomain = domain.replace(/^(.)(.*?)(\..+)$/, (_, firstChar, maskedChars, domainEnd) => {
+    const transformedDomain = domain.replace(/^(.)(.*?)(.)(\..+)$/, (_, firstChar, maskedChars, lastChar, domainEnd) => {
       const maskedMiddleChars = maskedChars.replace(/./g, "*");
-      return `${firstChar}${maskedMiddleChars}${domainEnd}`;
+      return `${firstChar}${maskedMiddleChars}${lastChar}${domainEnd}`;
     });
     
     const transformedEmail = `${transformedUsername}@${transformedDomain}`;
-
-    return transformedEmail
-  }
-
+    return transformedEmail;
+  };
   
 
   

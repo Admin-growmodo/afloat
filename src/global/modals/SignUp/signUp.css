@@ -43,3 +43,25 @@ form.form-signup {
   }
 
 }
+
+/* When screen height <= 730px, sign up modal needs to be adjusted to fit */
+@media only screen and (max-height: 730px) {
+    .sign__up-heading{
+      padding-bottom: 12px;
+    }
+
+    .sign__up-form {
+        margin-top: 24px;
+    }
+
+    form.form-signup {
+        gap: 12px;
+    }
+
+    .google__option-text {
+        padding: 12px 0;
+    
+    }
+
+  
+  }
