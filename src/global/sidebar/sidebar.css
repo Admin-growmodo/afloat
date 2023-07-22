@@ -6,6 +6,7 @@
     height: 100%;
     background: #fff;
     padding: 40px 24px;
+    overflow: auto;
 }
 .sidebar__overlay {
     position: fixed;
@@ -45,4 +46,12 @@ button.sidebar__close {
     font-size: 18px;
     line-height: 23.04px;
     text-align: center;
+}
+
+/**** Mobile Responsive ****/
+@media only screen and (max-width: 450px) {
+    .sidebar__overlay .sidebar {
+        width: 100%;
+        padding: 30px 18px !important;
+    }
 }

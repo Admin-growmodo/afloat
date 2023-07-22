@@ -25,7 +25,7 @@
     line-height: 32px;
     margin: 0;
   }
-  .modal__close {
+  .product__modal .modal__close {
     border: 0;
     background: #fff;
     padding: 0;
@@ -57,5 +57,17 @@
     .product__modal{
       width: 100%;
     }
+
+    .product__modal-btns {
+        flex-direction: column;
+    }
+
+    .product__modal .modal__close {
+
+        position: absolute;
+        top: 15px;
+        right: 15px;
+
+      }
   
   }
