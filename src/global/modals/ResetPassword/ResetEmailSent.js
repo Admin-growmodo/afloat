@@ -11,7 +11,7 @@ const ResetEmailSent = ({ show, openLoginModal, openResetPasswordModal,openReset
   function handleResendEmail(e) {
     e.preventDefault()
     openResetPasswordForm();
-    console.log('should go to reset password form')
+
   }
 
   return (

@@ -15,8 +15,6 @@ function Footer() {
     const handleNewsLetterSignUp = (e) => {
         e.preventDefault();
 
-        console.log('clicked me')
-
         if (newsLetterForm.current.checkValidity() && (inputEmail.current.value.length > 0)) {
 
             formFeedback.current.style.visibility  = 'visible';
